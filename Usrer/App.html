@@ -1,0 +1,242 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home page</title>
+        <link rel="stylesheet" href="Assets/style.css" />
+        <!-- Font Awesome Cdn Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <style>
+            .Maid{
+                margin-top: 5%;
+                margin-left: 10%;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+        
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #000000;
+            }
+        
+            th {
+                background-color: #153B5F;
+                color: #000000;
+            }
+        
+            input[type="date"],
+            button[type="button"] {
+                background-color: #153B5F;
+                color: #000000;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        
+            input[type="date"]:hover,
+            button[type="button"]:hover {
+                background-color: #FF9D1E; /* Hover color */
+            }
+        
+            .date-filter,
+            .table-container {
+                margin-top: 20px;
+            }
+        
+            .middle-buttons button {
+                margin-right: 10px;
+                transition: background-color 0.3s ease;
+            }
+        
+            .middle-buttons button:hover {
+                background-color: #FF9D1E; /* Hover color */
+            }
+        
+            /* Add these styles to your existing CSS */
+        
+            .date-filter {
+                background-color: #34495e;
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        
+            .manage-sale {
+                background-color: #34495e;
+                padding: 20px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+        
+            .table-container {
+                background-color: #000000;
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        
+            .data-container {
+                background-color: #34495e;
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        
+            .manage-sale,
+            .table-container {
+                margin-top: 20px;
+            }
+        
+            .button-container select,
+            .button-container button {
+                background-color: #153B5F;
+                color: #fcfcfc;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        
+            .button-container select {
+                margin-right: 10px;
+            }
+        
+            .button-container button {
+                margin-right: 10px;
+            }
+        
+            .button-container button:hover {
+                background-color: #FF9D1E; /* Hover color */
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header id="showcase">
+            <div class="overlay">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <img src="/img/LOGO.jpeg" alt="">
+                        </div>
+                        <ul class="navbar">
+                            <li><a href="homepage.html">Home</a></li>
+                            <br>
+                            <li><a href="Appointment.html">appointment</a></li>
+                            <li><a href="Services.html">services</a></li>
+                            <li><a href="About.html">about us</a></li>
+                            <li><a href="App.html">Lists</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </nav>
+
+                    <div class="line"></div>
+                    <main class="Maid">
+                        <div class="header">
+                            <div class="left">
+                                <h1>Appointment Lists</h1>
+                                <!-- <ul class="breadcrumb">
+                                    <li><a href="#">
+                                            Analytics
+                                        </a></li>
+                                    /
+                                    <li><a href="#" class="active">Shop</a></li>
+                                </ul> -->
+                            </div>
+                            <!-- <a href="#" class="report">
+                                <i class='bx bx-cloud-download'></i>
+                                <span>Download CSV</span>
+                            </a> -->
+                        </div>
+                       
+                        <div class="data-container">
+                            <div class="manage-sale">
+                                <div class="button-container">
+                                    <select>
+                                        <option>1-10</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
+                                <div class="button-container middle-buttons">
+                                    <button>Copy</button>
+                                    <button>CSV</button>
+                                    <button>Excel</button>
+                                    <button>PDF</button>
+                                    <button>Print</button>
+                                </div>
+                                <div class="button-container">
+                                    <button>Add</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </div>
+                        
+                            <div class="table-container">
+                                <!-- Appointment Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Appointment Type</th>
+                        <th>Date & Time</th>
+                        <th>Location</th>
+                        <th>Patient Name</th>
+                        <th>Contact Number</th>
+                        <th>Doctor</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>General Checkup</td>
+                        <td>2023-11-17 10:00 AM</td>
+                        <td>Medical Center A</td>
+                        <td>John Doe</td>
+                        <td>123-456-7890</td>
+                        <td>Dr. Smith</td>
+                        <td>Scheduled</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Dental Appointment</td>
+                        <td>2023-11-18 02:30 PM</td>
+                        <td>Dental Clinic B</td>
+                        <td>Jane Smith</td>
+                        <td>987-654-3210</td>
+                        <td>Dr. Johnson</td>
+                        <td>Completed</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            
+                                
+                            </div>
+                        </div>
+                    </main>
+            
+                </div>
+                </div>
+
+
+        </header>
+
+    </body>
+
+    </html>
+</span>

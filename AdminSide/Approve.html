@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Dashboard</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #fff;
+        }
+    
+        th {
+            background-color: #153B5F;
+            color: #fff;
+        }
+    
+        input[type="date"],
+        button[type="button"] {
+            background-color: #153B5F;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        input[type="date"]:hover,
+        button[type="button"]:hover {
+            background-color: #FF9D1E; /* Hover color */
+        }
+    
+        .date-filter,
+        .table-container {
+            margin-top: 20px;
+        }
+    
+        .middle-buttons button {
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .middle-buttons button:hover {
+            background-color: #FF9D1E; /* Hover color */
+        }
+    
+        /* Add these styles to your existing CSS */
+    
+        .date-filter {
+            background-color: #34495e;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    
+        .manage-sale {
+            background-color: #34495e;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+        .table-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    
+        .data-container {
+            background-color: #34495e;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    
+        .manage-sale,
+        .table-container {
+            margin-top: 20px;
+        }
+    
+        .button-container select,
+        .button-container button {
+            background-color: #153B5F;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .button-container select {
+            margin-right: 10px;
+        }
+    
+        .button-container button {
+            margin-right: 10px;
+        }
+    
+        .button-container button:hover {
+            background-color: #FF9D1E; /* Hover color */
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        button.approve {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        button.decline {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="logo-name"><span>Admin</span>Dashboard</div>
+        </a>
+        <ul class="side-menu">
+            <li ><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li > <a href="Appoint.html"><i class='bx bx-store-alt'></i>Appointments</a></li>
+            <li ><a href="Staff.html"><i class='bx bx-message-square-dots'></i>Staff</a></li>
+            <li class="active"><a href="Approve.html"><i class='bx bxs-hourglass'></i>Pending</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Pending Appointments</h1>
+                    <!-- <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Shop</a></li>
+                    </ul> -->
+                </div>
+                <!-- <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download CSV</span>
+                </a> -->
+            </div>
+           
+            <div class="data-container">
+                <div class="manage-sale">
+                    <div class="button-container">
+                        <select>
+                            <option>1-10</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="button-container middle-buttons">
+                        <button>Copy</button>
+                        <button>CSV</button>
+                        <button>Excel</button>
+                        <button>PDF</button>
+                        <button>Print</button>
+                    </div>
+                    <div class="button-container">
+                        <button>Add</button>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+            
+                <div class="table-container">
+                    <!-- Appointment Table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Appointment ID</th>
+                                <th>Appointment Type</th>
+                                <th>Date & Time</th>
+                                <th>Location</th>
+                                <th>Patient Name</th>
+                                <th>Contact Number</th>
+                                <th>Doctor</th>
+                                <th>Status</th>
+                                <!-- New columns for actions -->
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>General Checkup</td>
+                                <td>2023-11-17 10:00 AM</td>
+                                <td>Medical Center A</td>
+                                <td>John Doe</td>
+                                <td>123-456-7890</td>
+                                <td>Dr. Smith</td>
+                                <td>Scheduled</td>
+                                <!-- Actions buttons for the first appointment -->
+                                <td>
+                                    <button class="approve" onclick="approveAppointment('002')">Approve</button>
+                <button class="decline" onclick="declineAppointment('002')">Decline</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Dental Appointment</td>
+                                <td>2023-11-18 02:30 PM</td>
+                                <td>Dental Clinic B</td>
+                                <td>Jane Smith</td>
+                                <td>987-654-3210</td>
+                                <td>Dr. Johnson</td>
+                                <td>Completed</td>
+                                <!-- Actions buttons for the second appointment -->
+                                <td>
+                                    <button class="approve" onclick="approveAppointment('002')">Approve</button>
+                <button class="decline" onclick="declineAppointment('002')">Decline</button>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+
+                    
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="Assets/index.js"></script>
+
+</body>
+
+</html>

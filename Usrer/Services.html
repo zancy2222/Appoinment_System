@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+        .main {
+            position: relative;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .main-top {
+            display: flex;
+            width: 100%;
+        }
+
+        .main-top i {
+            position: absolute;
+            right: 0;
+            margin: 10px 30px;
+            color: rgb(110, 109, 109);
+            cursor: pointer;
+        }
+
+        .main-skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .main-skills .card {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            background: #424242;
+            text-align: center;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-skills .card:hover {
+            transform: scale(1.05);
+        }
+
+        .main-skills .card i {
+            font-size: 22px;
+            padding: 10px;
+        }
+
+        .main-skills .card h3 {
+            margin: 10px;
+            text-transform: capitalize;
+        }
+
+        .main-skills .card p {
+            font-size: 12px;
+            color: white;
+        }
+
+        .main-skills .card button {
+            background: orangered;
+            color: #fff;
+            padding: 7px 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .main-skills .card button:hover {
+            background: rgba(223, 70, 15, 0.856);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="showcase">
+        <div class="overlay">
+            <!-- Start DIV OVERLAY -->
+            <div class="container">
+                <!-- Start DIV Container -->
+                <nav>
+                    <div class="logo">
+                        <img src="/img/LOGO.jpeg" alt="">
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="homepage.html">Home</a></li>
+                        <br>
+                        <li><a href="Appointment.html">appointment</a></li>
+                        <li><a href="Services.html">services</a></li>
+                        <li><a href="About.html">about us</a></li>
+                        <li><a href="/Login.html">Login</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </nav>
+                <!-- End DIV Container -->
+                <div class="line"></div>
+
+                <section class="main">
+                    <div class="main-top">
+                        <h1>Services</h1>
+                        
+                    </div>
+                    <div class="main-skills">
+                        <div class="main-skills">
+                            <div class="card">
+                                <i class="fas fa-ambulance"></i>
+                                <h3>Emergency Department</h3>
+                                <p>Open 24/7 to provide immediate medical attention. Our highly-trained emergency team handles various cases, from minor injuries to life-threatening conditions.</p>
+                                <button>Learn More</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-medkit"></i>
+                                <h3>Pharmacy Services</h3>
+                                <p>Our in-house pharmacy offers quality and affordable medicines. Staffed by licensed pharmacists to assist patients with their medication needs.</p>
+                                <button>Explore Pharmacy</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-stethoscope"></i>
+                                <h3>Outpatient Services</h3>
+                                <p>For patients not requiring hospitalization, including general consultations, laboratory tests, and outpatient medical procedures.</p>
+                                <button>Discover Outpatient</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-x-ray"></i>
+                                <h3>Radiology Department</h3>
+                                <p>State-of-the-art radiology services, including X-rays, CT scans, and ultrasounds. Staffed by licensed radiologic technologists and board-certified radiologists.</p>
+                                <button>Explore Radiology</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-wheelchair"></i>
+                                <h3>Physical Therapy</h3>
+                                <p>Physical therapy services for rehabilitation after injury or surgery. Our licensed physical therapists design personalized treatment plans to help patients regain strength and mobility.</p>
+                                <button>Get Started with PT</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-user-md"></i>
+                                <h3>Specialized Medical Services</h3>
+                                <p>Various departments specializing in internal medicine, dermatology, orthopedics, and women's health, among others. Customized services to meet specific medical needs.</p>
+                                <button>Explore Specialties</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-syringe"></i>
+                                <h3>Travel Clinic</h3>
+                                <p>Visit our travel clinic for necessary vaccinations and medical advice before your trip. Our team provides information on health risks and recommends precautions for a healthy journey.</p>
+                                <button>Plan Your Travel</button>
+                            </div>
+                            
+                            <div class="card">
+                                <i class="fas fa-tooth"></i>
+                                <h3>Dental Services</h3>
+                                <p>Comprehensive dental services for patients of all ages. Our licensed dentists offer routine check-ups and a wide range of dental treatments.</p>
+                                <button>Explore Dental Care</button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

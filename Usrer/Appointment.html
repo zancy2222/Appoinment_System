@@ -1,0 +1,163 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home page</title>
+        <link rel="stylesheet" href="Assets/style.css" />
+        <!-- Font Awesome Cdn Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <style>
+            .main {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-image: linear-gradient(to bottom, #424242, #212121);
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            h4 {
+                color: #333;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                color: #007bff;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #555;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            form {
+                text-align: left;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #ffffff;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            .buttons {
+                text-align: center;
+            }
+
+            button {
+                padding: 12px 20px;
+
+                background-color: wheat;
+                border-radius: 0.5rem;
+                border: none;
+                font-size: 1.2rem;
+                transition: all 400ms;
+                box-shadow: 0 0 10px antiquewhite, 0 0 10px antiquewhite;
+            }
+
+            button.btn2 {
+                background-color: #dc3545;
+            }
+
+            button:hover {
+                background-color: rgb(116, 216, 85);
+                box-shadow: none;
+
+            }
+
+            button.btn2:hover {
+                background-color: antiquewhite;
+                box-shadow: none;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header id="showcase">
+            <div class="overlay">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <img src="/img/LOGO.jpeg" alt="">
+                        </div>
+                        <ul class="navbar">
+                            <li><a href="homepage.html">Home</a></li>
+                            <br>
+                            <li><a href="Appointment.html">appointment</a></li>
+                            <li><a href="Services.html">services</a></li>
+                            <li><a href="About.html">about us</a></li>
+                            <li><a href="/Login.html">Login</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </nav>
+
+                    <div class="line"></div>
+                    <div class="main">
+                        <h4 style="color: rgb(255, 255, 255);">Book an Appointment</h4>
+                        <h2 style=" color: #007bff;">Stay Healthy <span>with Our Services</span></h2>
+                        <p style="color: rgb(253, 253, 253);">Fill out the form below to schedule an appointment with
+                            us.</p>
+                            <p style="color: #ffffff; font-size: 14px;">
+                                Already submitted an appointment? <a href="/Usrer/App.html" style="color: aqua;">Check Status Here!</a>
+                            </p>
+                        <form action="#" method="post" class="appointment-form">
+                            <label for="name">Patient Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="phone">Patient Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="name">Appointment Type:</label>
+                            <input type="text" id="text" name="text" required>
+
+                            <label for="datetime">Preferred Date and Time:</label>
+                            <input type="datetime-local" id="datetime" name="datetime" required>
+
+                            <label for="message">Additional Information:</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+
+                            <div class="buttons">
+                                <button type="submit">Submit</button>
+                                <button class="btn2" type="reset">Reset</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+        </header>
+
+    </body>
+
+    </html>
+</span>
